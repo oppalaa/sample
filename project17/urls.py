@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('form/',form,name='form'),
+    path('data/',data,name='data'),
+    path('Webpage/',Webpage,name='Webpage'),
+    path('AcessRecords/',AcessRecords,name='AcessRecords'),
+    path('retrieve_webpage/',retrieve_webpage,name='retrieve_webpage'),
+    path('checkbox/',checkbox,name='checkbox'),
 ]

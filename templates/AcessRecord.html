@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #n
+       {
+        position: relative;
+        left:120px;
+       }
+       h1
+
+{  background:linear-gradient(200deg,yellow,red,pink,blue,orange,black,white,brown,green,lightgreen,navy,yellowgreen,violet);
+   animation: nvn 2s 1s infinite forwards linear;
+   color:gold;
+   text-align: center;
+   border-radius: 50px;
+   
+}
+@keyframes nvn {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    25%{
+        filter: hue-rotate(90deg);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+    }
+    75%{
+        filter: hue-rotate(270deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+fieldset
+{
+    width: fit-content;
+    padding:15px;
+    border:5px groove yellow;
+    border-radius:40%;
+    background-size:cover;
+}
+form
+{
+    position: relative;
+    left:0px;
+    top:-25px;
+    padding: 20px;;
+}
+legend
+{
+    border:3px solid royalblue;
+    text-align: center;
+    color: darkgrey;
+}
+body
+{
+     
+    background-size: cover;
+    background-color: black;
+    color: ghostwhite;
+}
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>AcessRecord</h1>
+        <form  method="post">
+            {% csrf_token %}
+            <fieldset>
+                <legend>AcessRecord</legend>
+            <table>
+                <tr>
+                   <td><label for="name">Name</label></td>
+                   <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date</label></td>
+                    <td><input type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                   <td><label for="author">Author</label></td>
+                   <td><input type="text" name="author" id="author"></td>
+               </tr>
+               <tr>
+                  <td><input type="submit" value="AcessRecord" id="n"></td>
+            </tr>
+            </table>
+        </fieldset>
+        </form>
+    </center>
+</body>
+</html>
